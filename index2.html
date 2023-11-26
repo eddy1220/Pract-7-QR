@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link href="styles2.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+</head>
+<body>
+<div class="centrar">
+   
+  <h2>Formulario de Contacto</h2>
+  <form id="contact-form">
+    <label for="name">Nombre:</label><br>
+    <input type="text" id="name" name="name" placeholder="Ingresar nombre"><br>
+    <label for="lastname">Apellido:</label><br>
+    <input type="text" id="lastname" name="lastname" placeholder="Ingresar apellido"><br>
+    <label for="phone">Teléfono:</label><br>
+    <input type="text" id="phone" name="phone" placeholder="Ingresar numero de telefono"><br>
+    <label for="email">Correo electrónico:</label><br>
+    <input type="text" id="email" name="email" placeholder="Ingresar E-Mail"><br><br>
+    <button id="generate-qrcode">Generar código QR</button>
+  </form> 
+  <div id="qrcode"></div>
+  <script src="script.js"></script>
+</div>
+</body>
+</html>
